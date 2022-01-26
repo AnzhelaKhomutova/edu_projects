@@ -3,8 +3,8 @@
  
  First Header  | Second Header
 ------------- | -------------
-Content Cell  | Content Cell
-Content Cell  | Content Cell
+[Отток клиентов](https://github.com/AnzhelaKhomutova/edu_projects/tree/main/customer_churn)  | Content Cell
+[текст ссылки](адрес ссылки)  | Content Cell
  
 1. Отток клиентов (customer_churn)
 Из «Бета-Банка» стали уходить клиенты. Каждый месяц. Немного, но заметно. Банковские маркетологи посчитали: сохранять текущих клиентов дешевле, чем привлекать новых.
