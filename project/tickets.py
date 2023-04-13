@@ -27,7 +27,7 @@ def func(n,k):
     return factorial(n)/(factorial(k)*factorial(n-k))
 
 
-# In[167]:
+# In[184]:
 
 
 def calc(nn):
@@ -38,7 +38,7 @@ def calc(nn):
     r=int((N_/m))
     for i in range(r+1):
         s+=((-1)**i)*func(n,i)*func((n+N_-i*m-1),(n-1))
-    return "{:.0f}".format(s) 
+    return round(s) 
 
 
 # In[5]:
@@ -53,7 +53,7 @@ nn=1 #поступает из файла
 mypath=r'D:\MyDesktop\сч билеты\test'
 
 
-# In[170]:
+# In[187]:
 
 
 for file in os.listdir(mypath):
@@ -68,11 +68,13 @@ for file in os.listdir(mypath):
                 #print(file2)
                 par_out_f = open(f2)
                 par_out = par_out_f.read()
-                print (calc(float(par_in)))
-                print((par_out))
-                print(float(calc(float(par_in)))-(float(par_out)))
+                print("n="+str(par_in))
+                print ("Мой результат =" + str(calc(float(par_in))))
+                print("Результат выходного файла = "+str((par_out)))
+                print("Разница ="+str(float(calc(float(par_in)))-(float(par_out))))
                 if float(calc(float(par_in)))==(float(par_out)) :
                     print('верно')
                 else:
                     print('неверно')
+                print('')   
 
